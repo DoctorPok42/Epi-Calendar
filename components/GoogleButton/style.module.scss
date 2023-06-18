@@ -1,0 +1,35 @@
+.googleButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  button {
+    padding: 0.7rem 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px var(--grey-light);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--black);
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    transition: var(--transition);
+
+    img {
+      width: 1.7rem;
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: var(--blue);
+      color: var(--white);
+    }
+  }
+}
