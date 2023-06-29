@@ -32,7 +32,8 @@ const Events = (props: any) => {
                         Here you can see all your <span>events</span> and <span>activities</span> from the last <span>30 days</span>
                     </h4>
 
-                    {google && <h4>You have <span>{planning.length}</span> events synced with your calendar</h4> }
+                    {google && <h4>You have <span>{planning.length}</span> events synced with your calendar</h4>}
+                    {planning.length == 0 && <h4>You don&apos;t have any events in your intranet</h4>}
                 </div>
             </section>
             <section className="container2">
