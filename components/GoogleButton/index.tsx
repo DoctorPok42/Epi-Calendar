@@ -37,7 +37,7 @@ const GoogleButton = ({ google, calendar, planning, setIsLoading, isLogin }: Goo
     }
 
     const handleGoogleLogin = () => {
-        if (!isLogin)
+        if (!isLogin && planning.length > 0)
             googleLogin()
         else if (planning.length > 0)
             syncCalendar()
